@@ -1,0 +1,90 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+
+  body {
+    background-color: #5daca9;
+  }
+  /* HEADER */
+  header {
+    /* använder chrome plugin colorZilla för att får exakta färger */
+    background-color: #1a252b;
+    
+  }
+  
+  header h1 {
+  
+    color: #fff;
+  }
+  
+  nav {
+    margin-top: 30px;
+    padding: 10px 0;
+  }
+  
+  nav a {
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  nav a:link:hover {
+    background-color: #1a252b;
+  }
+  
+  .menu {
+    background-color: #427878;
+  }
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+
+  .text-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 30px;
+  }
+
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 20px;  
+  }
+
+  .img-container {
+    height: 228px;
+    width: 331px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+  
+  }
+
+  .figcaption {
+    width: 331px;
+    margin-top: 10px;  
+  }
+
+  /* FOOTER */
+footer {
+    background-color: #1a252b;
+    padding: 1px;
+    text-align: center;
+    color: #fff;
+    width: 100%;
+    height: 50px;
+    margin: 0;
+  }
+
