@@ -88,3 +88,15 @@ footer {
     margin: 0;
   }
 
+
+  @media (max-width: 940px) {
+    
+    .img-container {
+        width: 100%;
+        height: auto;
+    }
+
+    .figcaption {
+      width: 400px;
+    }
+}
