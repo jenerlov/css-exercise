@@ -100,3 +100,50 @@ footer p {
   position: absolute;
   bottom: 0;
 }
+
+/* Animations */
+.sektion-animation {
+  animation: moveInLeft 1s ease-out;
+}
+
+.sektion1-float1,
+.sektion1-float2,
+.sektion1-float3,
+.sektion2-float1,
+.sektion2-float2,
+.sektion2-float3 {
+  animation: moveInRight 1s ease-out;
+}
+
+/* Keyframes */
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translatex(-50px);
+  }
+
+  80% {
+    transform: translatex(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translatex(100px);
+  }
+
+  80% {
+    transform: translatex(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
