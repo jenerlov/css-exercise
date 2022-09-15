@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="A website created based on teacher's wireframe, using display, float and positioning"
+		/>
+		<meta name="keywords" content="css, floats, " />
+		<meta name="author" content="Micke Ly" />
+		<link href="../styles/home.css" rel="stylesheet" type="text/css" />
+		<title>Home</title>
+		<!-- 1. Öppna DevTools och notera varningar/fel. Rätta till felen (meta-taggar). Visas fel med JavaScript ignoreras dessa.
+         2. Lägg till andra nödvändiga meta-taggar: författare, beskrivning, nyckelord, etc.
+         3. Skapa en extern css-fil i en mapp vid namn style, och länka in den -->
+	</head>
+	<body>
+		<!-- 4. Varför är texten "Sektion 1" placerade inuti en section mindre än texten "Positionering CSS" i header, då de båda är 
+            inuti en h1? Ändra så de äuppför sig likadant, efter du förstått svaret.
+         5. Positionera innehållet efter uppgiftens wireframe. Använd enbart display, float och position
+            Kika inte på facit förrän du provat själv. -->
+		<!--Svar: Sektion 1 är under <section> och är därför mindre. 
+        Ändrar så att sektion 2 också blir h1. Tycker det är mer passande.
+        Eftersom det är h1 för varsinn sektion. Dessutom är det h2er i boxarna,
+        så det är väl mer passande om det startar med en h1 i varje sektion och sen följer h2er.
+        Hade nog annars gjort en h1 som main topic för sidan och sen h2 för sektion titel.
+        Men eftersom det är en Homepage så kanske det inte spelar någon större roll, och sektion titlarna
+        egentligen kan vara h2er istället. -->
+		<header>
+			<h1>Positionering CSS</h1>
+			<nav class="menu">
+				<a href="index.html">Home</a>
+				<a href="#">Products</a>
+				<a href="./about.html">About</a>
+				<a href="#">Contact</a>
+			</nav>
+		</header>
+		<div class="container">
+			<section>
+				<h1 class="section-title">Sektion 1</h1>
+				<div class="sektion1 clearfix">
+					<div class="sektion1-float1">
+						<article>
+							<h2>1 artikel i sektion 1</h2>
+							<p>text 11</p>
+							<p>text 11</p>
+							<p>text 11</p>
+						</article>
+					</div>
+					<div>
+						<article class="sektion1-float2">
+							<h2>1 artikel i sektion 1</h2>
+							<p>text 12</p>
+							<p>text 12</p>
+							<p>text 12</p>
+						</article>
+					</div>
+					<div>
+						<article class="sektion1-float3">
+							<h2>1 artikel i sektion 1</h2>
+							<p>text 13</p>
+							<p>text 13</p>
+							<p>text 13</p>
+						</article>
+					</div>
+				</div>
+			</section>
+			<section>
+				<h1 class="section-title">Sektion 2</h1>
+				<div class="sektion2 clearfix">
+					<div class="sektion1-float1">
+						<article>
+							<h2>1 artikel i sektion 2</h2>
+							<p>text 21</p>
+							<p>text 21</p>
+							<p>text 21</p>
+						</article>
+					</div>
+					<div class="sektion1-float2">
+						<article>
+							<h2>1 artikel i sektion 2</h2>
+							<p>text 22</p>
+							<p>text 22</p>
+							<p>text 22</p>
+						</article>
+					</div>
+					<div class="sektion1-float3">
+						<article>
+							<h2>1 artikel i sektion 2</h2>
+							<p>text 23</p>
+							<p>text 23</p>
+							<p>text 23</p>
+						</article>
+					</div>
+				</div>
+			</section>
+		</div>
+		<footer class="footer">
+			<p>En sidfot</p>
+		</footer>
+	</body>
+</html>
