@@ -1,0 +1,274 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: #3aafa9;
+}
+
+header {
+  text-align: center;
+  background-color: #17242a;
+  color: white;
+}
+
+nav {
+  background-color: #2b7a77;
+}
+
+
+
+a {
+  display: block;
+  float: left;
+  color: white;
+  margin: 0;
+  padding: 1rem 2rem 1rem 2rem;
+  text-decoration: none;
+}
+
+a:hover {
+  background-color: #17242a;
+}
+
+h2 {
+  color: white;
+}
+
+img {
+  width: 100%;  
+}
+
+
+.container-first {
+  
+  display: flex;
+  max-width: 1200px;
+  max-block-size: 100px;
+  width: 100%;
+  justify-content: center;
+  align-items:initial;
+}
+
+.flexbox-item {
+  
+  width: 200px;
+  margin: 10px;
+  
+  background-color: #dfdfdf;
+}
+
+.flexbox-item-1 {
+  min-height: 100px;
+  background-color: #3aafa9;
+  
+  
+}
+
+.flexbox-item-2 {
+  display: flex;
+  justify-content: center;
+  min-height: 200px;
+  background-color: #3aafa9;
+  flex: 1;
+  min-width: 50%;
+  
+}
+
+.flexbox-item-3 {
+  min-height: 1px;
+  background-color: #3aafa9;
+  
+}
+
+
+.container-second {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.flexbox-item-4 {
+  min-height: 100px;
+  background-color: #3aafa9;
+  flex: 1;
+}
+
+.flexbox-item-5 {
+  display: flex;
+  min-height: 200px;
+  background-color: #3aafa9;
+  flex-wrap: wrap;
+  min-width: 100px;
+  min-height: 100px;
+  flex: 2;
+}
+
+.flexbox-item-6 {
+  min-height: 300px;
+  background-color: #3aafa9;
+  flex: 1;
+}
+
+.container-third {
+  display: flex;
+
+}
+
+.flexbox-item-7 {
+  min-height: 50px;
+  background-color: blue; 
+}
+
+.flexbox-item-8 {
+  min-height: 50px;
+  background-color: yellow;
+  flex: 1;
+}
+
+.flexbox-item-9 {
+  min-height: 50px;
+  background-color: red;
+}
+
+.container-fourth {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: stretch;
+}
+
+.mapouter {
+  min-height: 100px;
+  background-color: red;
+}
+
+.flexbox-item-11 {
+  min-height: 100px;
+  background-color: blue;
+  flex: 1;
+  
+}
+
+.flexbox-item-12 {
+  min-height: 100px;
+  background-color: yellow;
+}
+
+/*<-- KARTA -->*/
+.mapouter {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  height: 250px;
+  width: 250px;  
+}
+
+.gmap_canvas {
+  display: flex;
+  overflow: hidden;
+  background: none !important;
+  height: 250px;
+  width: 250px;
+  
+}
+
+/* <-- KONTAKT --> */
+
+.Contact__Card {
+  width: 600px;
+  height: 500px;
+  border: 1px solid lightgray;
+  border-radius: 1rem;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  grid-template-rows: 1fr 1fr 150px 1fr;
+}
+
+.Input__Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid red;
+}
+
+.Text__Container {
+  grid-column: span 2;
+}
+
+.Button__Container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+/* Element styles */
+.Input {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.5rem;
+  border: 2px solid lightblue;
+  border-radius: 0.5rem;
+  width: 100%;
+}
+
+.Input:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgb(173, 216, 230, 0.5);
+}
+
+.Message {
+  resize: none;
+}
+
+.Label {
+  padding-bottom: 0.25rem;
+  font-weight: 600;
+}
+
+.Button {
+  background-color: darkblue;
+  border-color: #dbdbdb;
+  border-width: 1px;
+  color: white;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  padding: 1rem 1.5rem;
+}
+
+.Button:hover {
+  border-color: #b5b5b5;
+}
+
+.Button:focus {
+  outline: none;
+  border-color: #485fc7;
+  color: #363636;
+  box-shadow: 0 0 0 0.125em rgba(72, 95, 199, 0.25);
+}
+
+/* <--KONTAKT SLUT --> */
+
+footer {
+  
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 3rem 2rem 3rem 2rem;
+  background-color: #17242a;
+  color: white;
+  text-align: center;
+
+}
